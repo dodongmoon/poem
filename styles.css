@@ -3,9 +3,7 @@
 ──────────────────────────────────── */
 @font-face {
   font-family: 'Noto Sans KR Full';
-  src: url('/fonts/NotoSansKR-Regular.woff2') format('woff2'),
-       url('/fonts/NotoSansKR-Regular.woff')  format('woff');
-  /* 유니코드 범위 지정 없으면 TTF가 커버하는 모든 글리프 사용 */
+  src: url('fonts/NotoSansKR-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
