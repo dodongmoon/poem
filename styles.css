@@ -1,11 +1,15 @@
+/* ────────────────────────────────────
+   Self-hosted Noto Sans KR (풀커버)
+──────────────────────────────────── */
 @font-face {
   font-family: 'Noto Sans KR Full';
-  src: url('/NotoSansKR-Regular.woff2') format('woff2'),
-       url('/NotoSansKR-Regular.woff')  format('woff');
-  /* unicode-range 지정 안 하면 TTF가 커버하는 전 코드를 다 씁니다 */
+  src: url('/fonts/NotoSansKR-Regular.woff2') format('woff2'),
+       url('/fonts/NotoSansKR-Regular.woff')  format('woff');
+  /* 유니코드 범위 지정 없으면 TTF가 커버하는 모든 글리프 사용 */
   font-weight: normal;
   font-style: normal;
 }
+
 
 body {
   font-family:
