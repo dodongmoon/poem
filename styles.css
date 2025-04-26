@@ -10,10 +10,17 @@
 
 
 body {
+  /* 풀커버 폰트를 가장 먼저 불러오도록 */
   font-family:
-    'Noto Sans KR Full',  /* 방금 self-hosted 한 풀커버 폰트 */
-    'Noto Sans KR',       /* 구글 웹폰트 서브셋(있다면) */
+    'Noto Sans KR Full',
+    'Noto Sans KR',
     sans-serif;
+  line-height: 1.6;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 
@@ -40,15 +47,6 @@ body {
     padding: 0;
 }
 
-body {
-    font-family: 'Noto Sans KR', sans-serif;
-    line-height: 1.6;
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 30px 20px;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
 
 .page-header {
     text-align: center;
