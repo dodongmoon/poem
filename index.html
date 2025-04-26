@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국어 학습 도우미</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-header">
+        <h1>양가연 국어 학습 도우미</h1>
+    </div>
+    
+    <div class="poem-selector">
+        <div class="selector-title">시 선택하기</div>
+        <div class="selector-buttons">
+            <button class="poem-btn" data-poem="dawn-letter">새벽편지</button>
+            <button class="poem-btn" data-poem="poor-love-song">가난한 사랑 노래</button>
+            <button class="poem-btn active" data-poem="riverside-station">강변역에서</button>
+            <button class="poem-btn" data-poem="winter-sea">겨울바다</button>
+            <button class="poem-btn" data-poem="sok-miin-gok">속미인곡</button>
+        </div>
+    </div>
+    
+    <!-- 강변역에서 -->
+    <div class="poem-container active" id="riverside-station">
+        <div class="poem-header">
+            <h2>강변역에서</h2>
+            <p class="author">- 정호승</p>
+        </div>
+        
+        <div class="poem">
+            <span class="repetition" data-meaning="시구반복: 
+              1.운율
+              2.의미
+              '이별의 아픔' 강조
+              '재회에 대한 소망' 제시
+              '주제 의식' 강조">너를 기다리다가</span>
+            오늘 하루<span class="highlight" data-meaning="기다림의 반복">도</span> 마지막 날<span class="highlight" data-meaning="직유법">처럼</span> 지나갔다.
+            <span class="repetition" data-meaning="시구반복: 
+              1.운율
+              2.의미
+              '이별의 아픔' 강조
+              '재회에 대한 소망' 제시
+              '주제 의식' 강조">너를 기다리다가</span>
+            사랑도 인생이라는 것을 깨닫지 못했다
+            바람은 불고 강물은 흐르고
+            어느새 강변의 불빛마저 꺼져 버린 뒤
+            <span class="repetition" data-meaning="시구반복: 
+              1.운율
+              2.의미
+              '이별의 아픔' 강조
+              '재회에 대한 소망' 제시
+              '주제 의식' 강조">너를 기다리다가</span>
+            열차는 또다시 내 가슴 위로 소리 없이 지나갔다
+            우리가 만남이라고 불렀던
+            첫눈 내리는 <span class="highlight" data-meaning="공간적 배경 : 사랑의 추억이 깃든 장소">강변역</span>에서
+            내가 아직도 너를 기다리고 있는 것은
+            <span class="highlight" data-meaning="깊은 사랑">나의 운명보다 언제나
+            너의 운명을 더 슬퍼하기 때문이다</span>
+            그 언젠가 겨울 산에서
+            <span class="highlight" data-meaning="의인법,추억">저녁 별들이 흘리는 눈물</span>을 보며
+            우리가 사랑이라고 불렀던
+            바람 부는 강변역에서
+            나는 오늘도
+            <span class="highlight" data-meaning="너와의 사랑과 재회를 다시 소망함">우리가 물결처럼
+            다시 만나야 할 날들을 생각했다</span>
+        </div>
+        
+        <div class="notes-image-container">
+            <img src="/강변역에서.jpg" alt="강변역에서 학습 노트" class="notes-image">
+        </div>
+    </div>
+    
+    <!-- 새벽편지 -->
+    <div class="poem-container" id="dawn-letter">
+        <div class="poem-header">
+            <h2>새벽편지</h2>
+            <p class="author">- 곽재구</p>
+        </div>
+        
+        <div class="poem"><span class="symmetry-highlight"><span class="symmetry-content"><span class="highlight" data-meaning="시간적 배경 / 희망을 기다리는 시간">새벽</span>에 깨어나
+                    반짝이는 <span class="highlight" data-meaning="희망,꿈,이상">별</span>을 보고 있으면
+                    이 世상 깊은 어디에 마르지 않는
+                    <span class="highlight" data-meaning="사랑과 희망이 가득한 세계에 대한 기대">사랑의 샘 하나 출렁이고 있을 것만 같다</span></span><span class="symmetry-arrow">→</span><span class="symmetry-label symmetry-question" data-original="수미상관">?</span></span>
+            <span class="highlight" data-meaning="험한 세상을 살아가는 사람들 (부정적 현실로 괴로워함)">고통과 쓰라림과 목마름의 정령</span>들은 잠들고
+            <span class="highlight" data-meaning="고통을 겪어낸 사람들이 깨어 교감하는">눈시울이 붉어진 인간의 혼</span>들만 깜박이는
+            아무도 모르는 <span class="highlight" data-meaning="새벽">고요한 그 시각</span>에 
+            <span class="highlight" data-meaning="진실한 우리의 소망">아름다움은 새벽의 창을 열고
+            우리들 가슴의 깊숙한 뜨거움과 만난다</span>
+            <span class="highlight" data-meaning="1.고통을 통한 성숙의 의지(자신)
+            2.고통받는 사람들에 대한 애정과 관심 (타인)">다시 고통하는 법을 익히기</span>시작해야겠다
+            이제<span class="highlight" data-meaning="시적 화자가 바라는 세계"> 밝아올 아침</span>의 <span class="highlight" data-meaning="새로운 세상의 이미지
+            ->고통이 끝난 새로운 세계 / 감각적 (청각) 표현함 (=형상화)
+                                                                                     *추상적 개념/구체적 심상형상화">자유로운 새소리 </span>를 듣기 위하여
+            <span class="numbered-highlight" data-meaning="촉각" data-number="1">따스한 햇살</span>과 <span class="numbered-highlight" data-meaning="촉각" data-number="2">바람</span>과 <span class="numbered-highlight" data-meaning="후각" data-number="3">라일락 꽃향기</span>를 맡기 위하여
+            <div class="inline-question">
+                <span class="question-label">1번+2번+3번 = </span>
+                <span class="inline-answer-btn">?</span>
+<span class="inline-answer">감각적 형상화</span></div>
+            <span class="repetition" data-meaning="반복,강조,진정성">진정으로</span><span class="repetition" data-meaning="반복,강조,진정성">진정으로</span>너를 사랑한다는 한마디
+            <span class="highlight" data-meaning="희망을 갖기 위해 쓰는 편지, 매개체">새벽 편지</span>를 쓰기 위하여
+<span class="symmetry-highlight"><span class="symmetry-content">새벽에 깨어나
+                    반짝이는 별을 보고 있으면
+                    이 世상 깊은 어디에 마르지 않는
+                    희망의 샘 하나 출렁이고 있을 것만 같다
+                </span><span class="symmetry-arrow">←</span><span class="symmetry-label symmetry-question" data-original="수미상관">?</span></span></div>
+        
+        <div class="notes-image-container">
+            <img src="/새벽편지.jpg" alt="새벽편지 학습 노트" class="notes-image">
+        </div>
+    </div>
+    
+    <!-- 가난한 사랑 노래 -->
+    <div class="poem-container" id="poor-love-song">
+        <div class="poem-header">
+            <h2>가난한 사랑 노래</h2>
+            <p class="author">- 신경림</p>
+        </div>
+        <div class="poem">
+          <span class="symmetry-highlight"><span class="symmetry-content">가난하다고 해서 <span class="yellow-highlight" data-meaning="화자의 정서1">외로움</span>을 모르겠는가
+                </span><span class="symmetry-arrow">←</span><span class="symmetry-label symmetry-question" data-original="설의법,반복법 : 화자의 정서 강조">?</span></span>
+<span class="highlight" data-meaning="화자의 상황 : 이별">너와 헤어져 돌아오는</span>
+눈 쌓인 골목길에 <span class="highlight" data-meaning="시각적 심상 : 외로움이 강화">새파랗게 달빛</span>이 쏟아지는데.
+          <span class="symmetry-highlight"><span class="symmetry-content">가난하다고 해서 <span class="yellow-highlight" data-meaning="화자의 정서2">두려움</span>이 없겠는가
+                </span><span class="symmetry-arrow">←</span><span class="symmetry-label symmetry-question" data-original="설의법,반복법">?</span></span>
+<span class="highlight" data-meaning="새벽 2시">두 점</span>을 치는 소리
+<span class="highlight" data-meaning="시간적 배경
+  동) 심야 통행금지를 어긴 사람들을 쫓아가는 방범대원의 호각 소리를 통해 억압적인 사회 분위기를 형상화함">방범대원의 호각 소리</span> <span class="highlight" data-meaning="쓸쓸한 소리
+                                                                                   동)늦은 밤까지 메밀묵을 팔러 다니는 고달픈 서민들의 삶의 모습">메밀묵 사려 소리</span>에
+눈을 뜨면 멀리 <span class="highlight" data-meaning="도시의 기계 문명, 노동자의 현실, 열악한 환경">육중한 기계 굴러가는 소리.</span>
+<span class="symmetry-highlight"><span class="symmetry-content">가난하다고 해서 <span class="yellow-highlight" data-meaning="화자의 정서3, 그리움의 대상 : 어머님">그리움</span>을 버렸겠는가
+                </span><span class="symmetry-arrow">←</span><span class="symmetry-label symmetry-question" data-original="설의법,반복법">?</span></span>
+<span class="highlight" data-meaning="그리움의 대상">어머님</span> 보고 싶소 수없이 뇌어 보지만,
+집 뒤 감나무에 까치밥으로 하나 남았을
+<span class="highlight" data-meaning="시각 , Гри움 강조">새빨간</span> 감 바람 <span class="highlight" data-meaning="청각">소리</span>도 그려 보지만.
+<span class="symmetry-highlight"><span class="symmetry-content">가난하다고 해서 <span class="yellow-highlight" data-meaning="화자의 정서4">사랑</span>을 모르겠는가
+                </span><span class="symmetry-arrow">←</span><span class="symmetry-label symmetry-question" data-original="설의법,반복법">?</span></span>
+<span class="repetition" data-meaning=화자>내</span> 볼에 와 닿던 <span class="repetition" data-meaning=대상>네</span> 입술의 <span class="highlight" data-meaning="사랑을 (촉각적)심상으로 표현">뜨거움</span>
+사랑한다고 사랑한다고 속삭이던 <span class="highlight" data-meaning="사랑을 (촉각적) 심상으로 표현">네 숨결</span>
+돌아서는 <span class="repetition" data-meaning=화자>내</span> 등 뒤에 터지던 <span class="highlight" data-meaning="대상의 서러움을 (청각적) 심상으로 표현">네 울음.</span>
+          <span class="yellow-symmetry-highlight"><span class="symmetry-content">가난하다고 해서 왜 모르겠는가,
+            가난하기 때문에 이것들을
+<span class="highlight" data-meaning="외로움,두려움,그리움,사랑
+  ->즉, 인간으로서 느끼는 감정들을 버려야 한다는 것">이 모든 것</span>들을 버려야 한다는 것을.
+</span><span class="yellow-symmetry-arrow">←</span><span class="yellow-symmetry-label symmetry-question" data-original="도치법, 도시 녿동자들이 기본적인 삶을 보장 받지 못하고 살아가는 현실을 강조함">?</span></span>
+        </div>
+        
+        <div class="notes-image-container">
+            <img src="/가난한 사랑 노래.jpg" alt="가난한 사랑 노래 학습 노트" class="notes-image">
+        </div>
+    </div>
+    
+    <!-- 겨울바다 -->
+    <div class="poem-container" id="winter-sea">
+        <div class="poem-header">
+            <h2>겨울바다</h2>
+            <p class="author">- 김남조</p>
+        </div>
+        
+        <div class="poem">
+<span class="red-highlight" data-meaning="부정적, 시적 대상:소멸과 허무의 공간">겨울 바다</span>에 가 보았지
+미지의 새
+<span class="highlight" data-meaning="소망과 기대의 상실">보고 싶던 새들은 죽고 없었네</span>
+
+<span class="highlight" data-meaning="사랑하는 이">그대</span> 생각을 했건만도
+<span class="highlight" data-meaning="현실적 시련과 고통">매운 해풍에</span>
+<span class="highlight" data-meaning="사랑의 상실로 인한 절망">그 진실마저 눈물져 얼어 버리고</span>
+
+허무의
+<span class="red-highlight" data-meaning="부정적, 소멸,상실,죽음의 이미지">불</span>
+<span class="highlight" data-meaning="절망"><span class="yellow-highlight" data-meaning="긍정적">물</span> 이랑 위에 불붙어 있었네.</span>
+
+나를 가르치는 건
+언제나
+<span class="highlight" data-meaning="시간의 흐름에 따라 성숙해짐">시간</span>
+<span class="highlight" data-meaning="삶에 대한 긍정">끄덕이며 끄덕이며</span> <span class="highlight" data-meaning="깨달음의 공간인 겨울바다"><span class="yellow-highlight" data-meaning="긍정적">겨울 바다</span>에 섰었네.</span>
+
+<span class="repetition" data-meaning="삶의 유한성 인식, 시구반복">남은 날은
+적지만</span>
+          
+<span class="highlight" data-meaning="삶의 절망을 극복하려는 노력">기도를 끝낸 다음</span>
+더욱 뜨거운 <span class="highlight" data-meaning="절망이 희망으로 전환되는 공간">기도의 문</span>이 열리는
+<span class="highlight" data-meaning="성찰적 태도 (삶의 참된 의미를 찾고자 하는)">그런 영혼을 갖게 하소서.</span>
+
+<span class="repetition" data-meaning="삶의 유한성 인식, 시구반복2">남은 날은
+적지만</span>
+
+<span class="highlight" data-meaning="생성의 공간 : 화자의 인식 전환"><span class="yellow-highlight" data-meaning="긍정적">겨울 바다</span>에 가 보았지</span>
+<span class="highlight" data-meaning="고통을 견뎌냄">인고</span>의 <span class="yellow-highlight" data-meaning="허무,절망,죽음의 극복을 상징함">물</span>이
+          <span class="highlight" data-meaning="시적화자의 허무 극복 의지를 시각적으로 형상화">수심 속에 <span class="yellow-highlight" data-meaning="허무,절망,죽음의 극복을 상징함">기둥</span>을 이루고 있었네.</span>
+        </div>
+        
+        <div class="notes-image-container">
+            <img src="/겨울바다.jpg" alt="겨울바다 학습 노트" class="notes-image">
+        </div>
+    </div>
+    
+    <!-- 속미인곡 -->
+    <div class="poem-container" id="sok-miin-gok">
+        <div class="poem-header">
+            <h2>속미인곡</h2>
+            <p class="author">- 정철</p>
+        </div>
+        
+        <div class="poem">
+<span class="symmetry-highlight"><span class="symmetry-content">뎨 가ᄂᆞᆫ 뎌 각시 본 듯도 <span class="highlight" data-meaning="ᄒᆞᆫ뎌이고 : 하구나">ᄒᆞᆫ뎌이고</span>
+<span class="thin-red-highlight" data-meaning="천상 백옥경(임금이 계시는 궁궐)과 이별하였다는 것을 통해 화자가 임과 이별한 처지임을 알 수 있음.">텬샹(天上) <span class="highlight" data-meaning="ᄇᆡᆨ옥경(白玉京) : 옥황상제가 산다고 하는 곳">ᄇᆡᆨ옥경(白玉京)</span>을 엇디ᄒᆞ야 니별(離別)ᄒᆞ고</span>
+<span class="thin-red-highlight" data-meaning="시간적 배경 - 애상적 분위기를 자아냄">ᄒᆡ 다 뎌 져믄 날의 <span class="highlight" data-meaning="눌 : 누구를">눌</span>을</span> 보라 가시ᄂᆞᆫ고</span><span class="symmetry-arrow">←</span><span class="symmetry-label symmetry-question" data-original="갑">?</span></span>
+<span class="yellow-symmetry-highlight"><span class="symmetry-content">어와 <span class="highlight" data-meaning="네여이고 : 너로구나">네여이고</span> 이내 ᄉᆡ셜 드러 보오
+내 얼굴 이 거동이 님 <span class="highlight" data-meaning="괴얌 : 사랑함">괴얌</span> 즉ᄒᆞᆫ가마ᄂᆞᆫ
+엇딘디 날 보시고 네로다 녀기실ᄉᆡ
+<span class="thin-red-highlight" data-meaning="임에 대한 화자의 순수한 사랑과 믿음의 자세가 나타남">나도 님을 미더 <span class="highlight" data-meaning="군ᄠᅳ디 : 딴 생각이">군ᄠᅳ디</span> 젼혀 업서</span>
+<span class="thin-red-highlight" data-meaning="을이 생각하는 이별의 이유"><span class="highlight" data-meaning="어리광이며">이ᄅᆡ야</span> 교ᄐᆡ야 어ᄌᆞ러이 ᄒᆞ돗ᄯᅥ디</span>
+반기시ᄂᆞᆫ ᄂᆡᆺ비치 녜와 엇디 다ᄅᆞ신고
+누어 ᄉᆡᆼ각ᄒᆞ고 니러 안자 <span class="highlight" data-meaning="헤아리니">혜여ᄒᆞ니</span>
+내 몸의 지은 죄 뫼ᄀᆞ티 ᄡᅡ혀시니
+하ᄂᆞᆫ히라 원망ᄒᆞ며 사ᄅᆞᆷ이라 허믈ᄒᆞ랴
+<span class="highlight" data-meaning="풀어 헤아리니">셜워 플텨</span> 혜니 조믈(造物)의 타시로다</span><span class="yellow-symmetry-arrow">←</span><span class="yellow-symmetry-label symmetry-question" data-original="을">?</span></span>
+<span class="symmetry-highlight"><span class="symmetry-content">글란 ᄉᆡᆼ각 마오</span><span class="symmetry-arrow">←</span><span class="symmetry-label symmetry-question" data-original="갑">?</span></span> <span class="yellow-symmetry-highlight"><span class="symmetry-content">ᄆᆡ친 일이 이셔이다</span><span class="yellow-symmetry-arrow">←</span><span class="yellow-symmetry-label symmetry-question" data-original="을">?</span></span>
+<span class="yellow-symmetry-highlight"><span class="symmetry-content"><span class="short-right-highlight" data-meaning="임에 대한 염려"><span class="short-right-content">님을 뫼셔 이셔 님의 일을 내 알거니
+믈 ᄀᆞᄐᆞᆫ 얼굴이 편ᄒᆞ실 적 몃 날일고
+<span class="highlight" data-meaning="이른 봄의 추위와 여름철의 괴로운 더위">츈한고열(春寒苦熱)</span>은 엇디ᄒᆞ야 디내시며
+<span class="highlight" data-meaning="가을과 겨울 날씨">츄일동텬(秋日冬天)</span>은 뉘라셔 뫼셧ᄂᆞᆫ고
+<span class="highlight" data-meaning="아침밥을 먹기 전에 먹는 죽. 자릿조반.">쥭조반(粥早飯)</span> 죠셕(朝夕) <span class="highlight" data-meaning="진지">뫼</span> 녜와 ᄀᆞᆺ티 <span class="highlight" data-meaning="잡수시는가">셰시ᄂᆞᆫ가</span>
+기나긴 밤의 ᄌᆞᆷ은 엇디 자시ᄂᆞᆫ고</span><span class="short-right-arrow"></span></span></span>
+<span class="highlight" data-meaning="임 쪽의, 임 계신 곳">님다히</span> 쇼식(消息)을 아므려나 아쟈 ᄒᆞ니
+<span class="thin-red-highlight" data-meaning="임에 대한 그리움으로 하루하루를 지내는 화자의 모습이 나타남">오ᄂᆞᆯ도 거의로다 ᄂᆡ일이나 사ᄅᆞᆷ 올가</span>
+내 ᄆᆞᄋᆞᆷ 둘 ᄃᆡ 업다 어드러로 가쟛 말고
+<span class="thin-red-highlight" data-meaning="임과의 거리를 좁혀 보려는 노력 1">잡거니 밀거니 놉픈 뫼ᄒᆡ 올라가니</span>
+<span class="thin-red-highlight" data-meaning="구름과 안개 때문에 임이 계신 곳을 볼 수 없음"><span class="repetition" data-meaning="임과 화자 사이를 막는 방해물">구롬</span>은ᄏᆞ니와 <span class="repetition" data-meaning="임과 화자 사이를 막는 방해물">안개</span>ᄂᆞᆫ 므ᄉᆞ 일고</span>
+산쳔(山川)이 어둡거니 일월(日月)을 엇디 보며
+지쳑(咫尺)을 모ᄅᆞ거든 쳔 리(千里)ᄅᆞᆯ ᄇᆞ라보랴
+<span class="thin-red-highlight" data-meaning="임과의 거리를 좁혀 보려는 노력 2">ᄎᆞᆫ하리 믈ᄀᆞ의 가 ᄇᆡ 길히나 보랴 ᄒᆞ니</span>
+<span class="repetition" data-meaning="임과 화자 사이를 막는 방해물">ᄇᆞ람</span>이야 <span class="repetition" data-meaning="임과 화자 사이를 막는 방해물">믈결</span>이야 어둥졍 <span class="highlight" data-meaning="되었구나">된뎌이고</span>
+샤공은 어ᄃᆡ 가고 <span class="highlight" data-meaning="븬 ᄇᆡ : 객관적 상관물 - 화자의 외로움을 강조함">븬 ᄇᆡ</span>만 걸렷ᄂᆞᆫ고
+<span class="thin-red-highlight" data-meaning="낮 동안의 화자의 외로움을 불러일으킴"><span class="highlight" data-meaning="강텬(江天) : 툭 터진 강가">강텬(江天)</span>의 혼자 셔셔 디ᄂᆞᆫ ᄒᆡᄅᆞᆯ 구버보니
+님다히 쇼식(消息)이 더옥 아득ᄒᆞᆫ뎌이고</span>
+<span class="highlight" data-meaning="초가집 처마">모쳠(茅簷)</span> ᄎᆞᆫ 자리의 밤듕만 도라오니
+<span class="highlight" data-meaning="벽 한가운데 있는 등불 , 객관적 상관물 - 외로움을 불러 일으킴">반벽쳥등(半壁靑燈)</span>은 눌 위ᄒᆞ야 ᄇᆞᆯ갓ᄂᆞᆫ고
+<span class="thin-red-highlight" data-meaning="낮 동안의 화자의 행동들을 요약함">오ᄅᆞ며 ᄂᆞ리며 <span class="highlight" data-meaning="헤ᄯᅳ며 : 헤매며">헤ᄯᅳ며</span> <span class="highlight" data-meaning="바자니니 : 부질없이 오락가락 거니니">바자니니</span></span>
+져근덧 녁진(力盡)ᄒᆞ야 픗ᄌᆞᆷ을 잠간 드니
+졍셩(精誠)이 지극ᄒᆞ야 ᄭᅮᆷ의 님을 보니
+<span class="highlight" data-meaning="옥처럼 곱던">옥(玉) ᄀᆞᄐᆞᆫ</span> 얼구리 반(半)이나마 늘거셰라
+<span class="highlight" data-meaning="마음속에 품은 온갖 회포">ᄆᆞᄋᆞᆷ의 머근 말</span>ᄉᆞᆷ <span class="highlight" data-meaning="실컫">슬ᄏᆞ장</span> <span class="highlight" data-meaning="사뢰려">ᄉᆞᆯᆸ쟈</span> ᄒᆞ니
+눈믈이 <span class="highlight" data-meaning="바로, 이내">바라</span> 나니 말ᄉᆞᆷ인들 어이ᄒᆞ며
+졍(情)을 못다 ᄒᆞ야 목이조차 몌여ᄒᆞ니
+<span class="thin-red-highlight" data-meaning="임을 볼 수 있는 꿈에서 깨어난 안타까움이 드러남"><span class="highlight" data-meaning="방정맞은">오뎐된</span> <span class="repetition" data-meaning="임과 화자 사이를 막는 방해물">계셩(鷄聲)</span>의 ᄌᆞᆷ은 엇디 ᄭᆡ돗던고</span>
+어와 허ᄉᆞ(虛事)로다 이 님이 어ᄃᆡ 간고
+<span class="highlight" data-meaning="꿈결에">결의</span>  니러 안자 창(窓)을 열고 ᄇᆞ라보니
+<span class="thin-red-highlight" data-meaning="임 없이 홀로 남겨진 화자의 쓸쓸함을 부각함">어엿븐 그림재 날 조ᄎᆞᆯ ᄲᅮᆫ이로다</span>
+<span class="thin-red-highlight" data-meaning="재회의 소망과 화자의 변함없는 사랑의 맹세">ᄎᆞᆯ하리 <span class="highlight" data-meaning="싀여디여 : 사라져,죽어서">싀여디여</span> 낙월(落月)이나 되야이셔
+님 겨신 창(窓) 안ᄒᆡ 번드시 비최리라</span></span><span class="yellow-symmetry-arrow">←</span><span class="yellow-symmetry-label symmetry-question" data-original="을">?</span></span>
+<span class="symmetry-highlight"><span class="symmetry-content"><span class="thin-red-highlight" data-meaning="시조 종장의 음수율과 동일함-정격 가사의 특징">각시님 ᄃᆞᆯ이야ᄏᆞ니와 구ᄌᆞᆫ비나 되쇼셔</span></span><span class="symmetry-arrow">←</span><span class="symmetry-label symmetry-question" data-original="갑">?</span></span> 
+        </div>
+    </div>
+    
+    <div class="qa-container">
+        <!-- 강변역에서 Q&A -->
+        <div class="qa-section active" id="riverside-station-qa">
+            <div class="qa-title">문제 풀이</div>
+            <div class="qa-items">
+               <div class="qa-item">
+                    <div class="question">이 시의 주제는?</div>
+                    <div class="answer-container">
+                        <button class="answer-btn">정답 확인</button>
+                        <div class="answer">이별의 아픔과 재회에 대한 소망</div>
+                    </div>
+                </div>
+                <div class="qa-item">
+                    <div class="question">시적 화자는 누구인가?</div>
+                    <div class="answer-container">
+                        <button class="answer-btn">정답 확인</button>
+                        <div class="answer">나(이별 후의)</div>
+                    </div>
+                </div>
+                <div class="qa-item">
+                    <div class="question">시적 상황은 무엇인가?</div>
+                    <div class="answer-container">
+                        <button class="answer-btn">정답 확인</button>
+                        <div class="answer">기다림의 상황</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 새벽편지 Q&A -->
+        <div class="qa-section" id="dawn-letter-qa">
+            <div class="qa-title">문제 풀이</div>
+                <div class="qa-item">
+                    <div class="question">'형상화'란?
+                    'OOO OO'을 표현할 때, 작가가 일정한 의도에 따라 'OOO OO'으로 나타내는 것</div>
+                    <div class="answer-container">
+                        <button class="answer-btn">정답 확인</button>
+                        <div class="answer">추상적 개념 (=고통이 끝난 새로운 세계)<br>
+                        구체적 심상 (=따스한 햇살,바람,라일락 꽃 향기)</div>
+                    </div>
+                </div>
+              <div class="qa-items">
+                <div class="qa-item">
+                    <div class="question">이 시의 주제는?</div>
+                    <div class="answer-container">
+                        <button class="answer-btn">정답 확인</button>
+                        <div class="answer">사랑과 희망이 실현되는 세계</div>
+                    </div>
+                </div>
+                <div class="qa-item">
+                    <div class="question">심상의 종류는?</div>
+                    <div class="answer-container">
+                        <button class="answer-btn">정답 확인</button>
+                        <div class="answer">감각적 심상<br>
+                        상승 / 하강<br>
+                        긍정 / 부정<br>
+                        정적 / 동적</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 가난한 사랑 노래 Q&A -->
+        <div class="qa-section" id="poor-love-song-qa">
+            <div class="qa-title">문제 풀이</div>
+            <div class="qa-items">
+                <div class="qa-item">
+                    <div class="question">이 시의 주제는?</div>
+                    <div class="answer-container">
+                        <button class="answer-btn">정답 확인</button>
+                        <div class="answer">도시화,산업화에서 소외된 도시 빈민의 삶에 대한 연민과 안타까움</div>
+                    </div>
+                </div>
+                <div class="qa-item">
+                    <div class="question">시적 화자가 처한 상황은?</div>
+                    <div class="answer-container">
+                        <button class="answer-btn">정답 확인</button>
+                        <div class="answer">가난하다고 여자친구와 헤어진 상황</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 겨울바다 Q&A -->
+        <div class="qa-section" id="winter-sea-qa">
+            <div class="qa-title">문제 풀이</div>
+            <div class="qa-items">
+                <div class="qa-item">
+                    <div class="question">이 시의 주제는?</div>
+                    <div class="answer-container">
+                        <button class="answer-btn">정답 확인</button>
+                        <div class="answer">삶의 허무를 극복하려는 강인한, 성숙한 의지</div>
+                    </div>
+                </div>
+                <div class="qa-item">
+                    <div class="question">원관념은 무엇인가?</div>
+                    <div class="answer-container">
+                        <button class="answer-btn">정답 확인</button>
+                        <div class="answer">원래 말하고자 하는 사물, 대상</div>
+                    </div>
+                </div>
+              <div class="qa-item">
+                    <div class="question">보조관념은 무엇인가?</div>
+                    <div class="answer-container">
+                        <button class="answer-btn">정답 확인</button>
+                        <div class="answer">원관념을 다른 사물에 빗댈 때 사물, 대상</div>
+                    </div>
+                </div>
+              <div class="qa-item">
+                    <div class="question">원관념과 보조관념 사이에는 OOO이 있어야 한다 !</div>
+                    <div class="answer-container">
+                        <button class="answer-btn">정답 확인</button>
+                        <div class="answer">유사성</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 속미인곡 Q&A -->
+        <div class="qa-section" id="sok-miin-gok-qa">
+            <div class="qa-title">문제 풀이</div>
+            <div class="qa-items">
+                <div class="qa-item">
+                    <div class="question">임과 화자 사이를 가로막는 방해물 네 가지를 찾아 쓰시오</div>
+                    <div class="answer-container">
+                        <button class="answer-btn">정답 확인</button>
+                        <div class="answer">구롬,안개,물결,ᄇᆞ람</div>
+                    </div>
+                </div>
+                <div class="qa-item">
+                    <div class="question">임이 계신 곳을 OO OOO으로 설정한 데서 임을 옥황상제와 같은 존재로 여기고 있음이 드러나고 있다</div>
+                    <div class="answer-container">
+                        <button class="answer-btn">정답 확인</button>
+                        <div class="answer">텬샹ᄇᆡᆨ옥경</div>
+                    </div>
+                </div>
+                <div class="qa-item">
+                    <div class="question">다음 설명이 맞으면 O, 틀리면 X표 하시오<br>
+                    (1)두 명의 화자가 말을 주고받는 형식으로 시상이 전개되고 있다<br>
+                    (2)임을 원망하는 한 여인의 마음에 빗대어 임금에 대한 충정을 노래하고 있다</div>
+                    <div class="answer-container">
+                        <button class="answer-btn">정답 확인</button>
+                        <div class="answer">임과 단절된 공간으로 화자의 고독과 그리움이 투영된 공간</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="buttons">
+        <button id="check-answers">정답 확인</button>
+        <button id="hide-answers">정답 숨기기</button>
+        <button id="reset">처음부터</button>
+    </div>
+
+    <div class="jammini-container" id="poor-love-song-jammini">
+        <div class="jammini-header">
+            잼민이 어시스트 - 가난한 사랑 노래
+        </div>
+        <div class="jammini-chat">
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">일단 빠르게 핵심부터 박고 시작 ㄱㄱ
+작가: 신경림 (국어쌤들이 좋아하는 민중 시인 ㄷㄷ)
+
+장르: 서정적, 민중적, 고백적
+
+주제: 가난한 사람도 외로움, 두려움, 그리움, 사랑 같은 감정 다 갖고 산다는거ㅠㅠ (이거 시험에 100% 나온다니까? ㅋㅋ)</div>
+                <span class="jammini-time">오후 2:15</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">본문 분석을 후딱 들어가보자잇ㅋㅋ</div>
+                <span class="jammini-time">오후 2:15</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">1연 (외로움 ver.)
+가난하다고 해서 외로움을 모르겠는가
+너와 헤어져 돌아오는
+눈 쌓인 골목길에 새파랗게 달빛이 쏟아지는데.
+
+해석
+야ㅋㅋ 가난하면 외로운 줄도 모르냐??
+여친이랑 헤어지고 오는 길인데, 눈까지 내리고 달빛도 새파랗고 차갑다 ㄷㄷ 개외로워서 심장 얼겠네ㅠㅠ
+
+한줄정리: 가난해도 외로움 개쩐다ㅠㅠ (분위기 차갑고 싸늘함 ㄷㄷ)</div>
+                <span class="jammini-time">오후 2:16</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">2연 (두려움 ver.)
+가난하다고 해서 두려움이 없겠는가
+두 점을 치는 소리 방범대원의 호각 소리
+메밀묵 사려 소주병을 들고
+이 골목 저 골목 기웃거리는 이 마음이
+왜 없겠는가
+
+해석
+가난하면 겁도 없을 줄 아는거 실화냐ㅋㅋㅋ
+밤에 방범대 호루라기 소리 들리면 솔직히 개쫄림;; ㄷㄷ
+메밀묵 하나 사려고 소주병 들고 동네 골목 헤매는 내 모습 찌질하고 불쌍해서 울고싶다ㅠㅠ
+
+한줄정리: 가난해도 두려움 개심하다 ㄷㄷ (호루라기 소리 = 현실불안ㅠㅠ)</div>
+                <span class="jammini-time">오후 2:17</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">3연 (그리움 ver.)
+가난하다고 해서 그리움을 버렸겠는가
+어머님 보고 싶소 수없이 되뇌이면서도
+집 뒤 감나무에 까치밥으로 하나 남았을
+새빨간 감 바람 소리도 그려보는데
+
+해석
+돈 없다고 엄마 생각 안 날 줄 아냐ㅋㅋ? 엄마 보고 싶해서 진짜 미치겠는데ㅠㅠ
+집 뒤에 까치밥으로 남겨놓은 빨간 감이 바람에 흔들리는 거 생각만 해도 개서글픔ㅠㅠ
+
+한줄정리: 가난해도 엄마 보고싶은건 똑같음ㅠㅠ (까치밥 = 가난 속 인정👍)</div>
+                <span class="jammini-time">오후 2:18</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">4연 (사랑 ver.)
+가난하다고 해서 사랑을 모르겠는가
+내 볼에 와 닿던 네 입술의 뜨거움
+사랑한다고 사랑한다고 속삭이던 네 숨결
+돌아서는 내 등뒤에 터지던 네 울음
+
+해석
+야 가난하면 사랑도 못하는 줄 알았냐ㅋㅋ
+키스할 때 입술 개뜨겁고 숨결도 달달했는데ㅠㅠ 헤어질 때 뒤에서 우는 소리 듣고 진짜 심장 부서짐ㅠㅠ 개맴찢
+
+한줄정리: 가난해도 사랑할 때 감정은 개진심 ㄷㄷ (뜨거운 입술, 울음소리 중요✔️)</div>
+                <span class="jammini-time">오후 2:19</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">작품 내 핵심 표현 쌉필수 암기템 (족보 ㄱㄱ)</div>
+                <span class="jammini-time">오후 2:20</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">
+<table class="jammini-table">
+    <tr>
+        <th>표현</th>
+        <th>뜻(시험100%)</th>
+    </tr>
+    <tr>
+        <td>눈 쌓인 골목길, 새파란 달빛</td>
+        <td>외롭고 쓸쓸한 분위기 ㄷㄷ (화자 감정반영)</td>
+    </tr>
+    <tr>
+        <td>방범대원의 호각소리</td>
+        <td>현실불안 ㄷㄷ (가난의 두려움)</td>
+    </tr>
+    <tr>
+        <td>메밀묵+소주병 들고 기웃</td>
+        <td>가난한 서민의 찌질한 일상ㅠㅠ</td>
+    </tr>
+    <tr>
+        <td>까치밥, 새빨간 감</td>
+        <td>어려워도 인정 넘치는 모습ㅠㅠ👍</td>
+    </tr>
+    <tr>
+        <td>뜨거운 입술, 속삭임, 울음</td>
+        <td>가난해도 사랑할 땐 진심임 ㄷㄷ</td>
+    </tr>
+</table></div>
+                <span class="jammini-time">오후 2:20</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">시험 대비 최종 정리 (찍먹버전 ㅋㅋ)
+반복 표현 "가난하다고 해서~~ 모르겠는가" 왜 씀?
+👉 운율형성+주제강조라고答 적으면 국어쌤 흐뭋하게 웃는다 ㄷㄷ
+
+결론: 가난하다고 인간적 감정까지 없는건 아님ㅠㅠ → 가난한 사람과의 공감과 연대가 이 시의 핵심임 (이거 쓰면 채점자가 감동먹음ㅋㅋ)</div>
+                <span class="jammini-time">오후 2:21</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="jammini-container" id="winter-sea-jammini">
+        <div class="jammini-header">
+            잼민이 어시스트 - 겨울바다
+        </div>
+        <div class="jammini-chat">
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">시험 직전 초스피드 핵심 정리부터 ㄱㄱ
+작가: 김남조 (대표적인 여성 서정시인 ㄷㄷ)
+
+성격: 서정적, 종교적, 상징적
+
+주제: 겨울 바다를 보며 느끼는 삶의 성찰, 신에 대한 믿음과 숭고함 (갑자기 분위기 종교 ㅋㅋㄷㄷ)</div>
+                <span class="jammini-time">오후 2:15</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">본문 정리 빠르게 드가자잇</div>
+                <span class="jammini-time">오후 2:15</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">🌊 1연
+겨울 바다에 가 보았지
+미지의 새
+보고 싶던 새들은 죽고 없었네
+그대 생각을 했건만도
+매운 해풍에
+그 진실마저 눈물져 얼어 버리고
+허무의 불
+물이랑 위에 불붙어あったね
+
+🗨️ 해석
+ 겨울바다 갔는데 생각했던 낭만 그런거 없음ㅋㅋ 내가 기대한 멋진 새들 전부 죽어버림;; 개허무ㅠㅠ
+너 생각하며 감성 터지려 했는데 바닷바람이 매워서 감성이고 뭐고 진실도 다 얼어버림 ㄷㄷ
+심지어 바다 위에 허무가 불처럼 활활 타오름 (허무 그 잡채 ㄷㄷ)
+
+✅ 한줄정리: 겨울바다 현실 = 기대했던 낭만 없음, 허무하고 고독한 분위기 ㄷㄷ</div>
+                <span class="jammini-time">오후 2:16</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">🌊 2연
+나를 가르치는 건 언제나 시간
+끄덕이며 끄덕이며 겨울 바다에 섰었네
+남은 날은
+적지만
+
+🗨️ 해석
+역시 나를 가르쳐 주는 건 언제나 '시간'임ㅋㅋ 인생은 실전이라는 걸 시간한테 배우는 중 ㄷㄷ
+겨울 바다 앞에서 계속 끄덕끄덕 거리면서 남은 인생 짧다고 생각 중 (갑자기 현자타임ㅋㅋ)
+
+✅ 한줄정리: 시간의 중요성 깨닫는 중ㅠㅠ (짧은 인생 실감ㄷㄷ)</div>
+                <span class="jammini-time">오후 2:17</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">🌊 3연
+기도를 끝낸 다음
+더욱 뜨거운 기도의 문이 열리는
+그런 영혼을 갖게 하소서
+겨울 바다에 가 보았지
+인고의 물이
+수심 속에 기둥을 이루고 있었네
+
+🗨️ 해석
+갑자기 기도하고 싶어짐ㅋㅋ (종교감성 급발진 ㄷㄷ)
+기도 끝나고 더 열심히 기도하는 사람이 되고 싶다고 겨울바다 앞에서 깨달음 얻음 ㄷㄷ
+바다 보니까 그 깊은 속에 인내의 물이 기둥처럼 서있는 느낌임 (고난 속의 인내 ㅇㅈ?)
+
+✅ 한줄정리: 겨울 바다 보고 삶과 신앙의 깊은 깨달음 ㄷㄷ (인내와 숭고함)</div>
+                <span class="jammini-time">오후 2:18</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">작품 핵심 표현 쌉필수 암기템 (시험 족보버전)</div>
+                <span class="jammini-time">오후 2:19</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">
+<table class="jammini-table">
+    <tr>
+        <th>표현</th>
+        <th>뜻(내신 필수템ㅋㅋ)</th>
+    </tr>
+    <tr>
+        <td>미지의 새 죽고 없음</td>
+        <td>낭만 기대했는데 현실은 개허무 ㄷㄷ</td>
+    </tr>
+    <tr>
+        <td>매운 해풍, 진실 얼어버림</td>
+        <td>현실의 고통, 추운 분위기 강조</td>
+    </tr>
+    <tr>
+        <td>허무의 불</td>
+        <td>허무함 MAX 상태 ㄷㄷ</td>
+    </tr>
+    <tr>
+        <td>나를 가르치는 건 시간</td>
+        <td>시간의 중요성 (깨달음 주는 존재)</td>
+    </tr>
+    <tr>
+        <td>끄덕이며 겨울바다 섰음</td>
+        <td>삶을 수용하는 자세(깨달음의 현자타임ㅋㅋ)</td>
+    </tr>
+    <tr>
+        <td>기도 후 더 뜨거운 기도</td>
+        <td>종교적 열정, 믿음의 성장 (급 종교적 ㄷㄷ)</td>
+    </tr>
+    <tr>
+        <td>인고의 물, 기둥</td>
+        <td>고통과 시련 속에서도 버티는 인내와 숭고함 ㄷㄷ</td>
+    </tr>
+</table></div>
+                <span class="jammini-time">오후 2:20</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">시험대비 찍먹 최종 정리 ver.ㅋㅋ
+이 시 제목 왜 「겨울 바다」냐고 물으면?
+👉 겨울 바다를 통해 삶의 허무함, 인생의 성찰, 신앙적 깨달음을 얻어서 그렇다고 하면 됨ㅋㅋ (쌤 감동 오짐)
+
+ 겨울바다는 그냥 바다가 아니라 인생의 고난과 인내, 숭고함을 나타내는 상징적 공간이니까,
+이것만 적어주면 1등급 무조건 박음 ㄷㄷ (국어쌤들 이거 좋아함)
+
+🔥 시험 하루 전 이거 하나만 봐도 국어 내신 1등급 쌉가능 인정??🔥
+ㄹㅇ 개꿀팁만 뽑았으니까 이거 보고 내신 찢자ㅋㅋㄷㄷ</div>
+                <span class="jammini-time">오후 2:21</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="jammini-container" id="dawn-letter-jammini">
+        <div class="jammini-header">
+            잼민이 어시스트 - 새벽편지
+        </div>
+        <div class="jammini-chat">
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">시험 직전 초스피드 핵심 정리부터 ㄱㄱ
+작가: 곽재구 (서정시 감성 원탑 찍는 시인 ㄷㄷ)
+
+성격: 희망적, 의지적, 서정적
+
+주제: 힘든 현실 속에서도 사랑과 희망 넘치는 세상 기다리며 서로 위로하는 내용 (급 따뜻한 감성ㅠㅠㅋㅋ)</div>
+                <span class="jammini-time">오후 2:15</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">본문 완벽 이해 쌉가능 ver.</div>
+                <span class="jammini-time">오후 2:15</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">🌟 1연
+새벽에 깨어나
+반짝이는 별을 보고 있으면
+이 世상 깊은 어디에 마르지 않는
+사랑의 샘 하나 출렁이고 있을 것만 같다
+
+🗨️ 해석
+새벽에 갑자기 깨서 별 보고 있는데 감성 터짐ㅋㅋ
+세상 어딘가에 절대 안 마르는 사랑의 샘물이 있는 느낌 듦 (감성 개쩌는 중ㅋㅋ)
+
+✅ 한줄정리: 새벽 = 사랑의 감성 충만 타임👍</div>
+                <span class="jammini-time">오후 2:16</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">🌟 2연
+고통과 쓰라림과 목마름의 정령들은 잠들고
+눈시울이 붉어진 인간의 혼들만 깜박이는
+아무도 모르는 고요한 그 시각에
+아름다움은 새벽의 창을 열고
+우리가들 가슴의 깊숙한 뜨거움과 만난다
+
+🗨️ 해석
+새벽에는 고통과 쓰라림 같은 힘든 현실 다 잠들고
+지친 사람들만 깨어있음 (슬픈 감성ㅠㅠ)
+근데 이때 새벽 감성이 가슴 깊은 뜨거움(희망)과 갑자기 급만남ㅋㅋㄷㄷ
+
+✅ 한줄정리: 고통스런 현실에도 새벽엔 감성 충전 완료 (희망 개터짐ㄷㄷ)</div>
+                <span class="jammini-time">오후 2:17</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">🌟 3연
+다시 고통하는 법을 익히기 시작해야겠다
+이제 밝아올 아침의 자유로운 새소리를 듣기 위하여
+따스한 햇살과 바람과 라일락 꽃향기를 맡기 위하여
+진정으로 진정으로 너를 사랑한다는 한마디
+새벽 편지를 쓰기 위하여
+
+🗨️ 해석
+힘든 현실 버티기 다시 배워야겠다고 다짐 중ㅋㅋ
+왜냐면 곧 밝아올 아침의 새소리, 햇살, 바람, 꽃향기 맡으려면 고통 버티는 법을 알아야함 (급 현자타임 ㄷㄷ)
+너 진심 사랑한다고 편지쓰려고 새벽에 깸ㅠㅠ (러브레터 각ㅋㅋ)
+
+✅ 한줄정리: 힘든 현실 버티고 희망찬 아침 기다리면서 사랑편지 준비중 (낭만 오짐ㅠㅠ)</div>
+                <span class="jammini-time">오후 2:18</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">🌟 4연 (수미상관🔄 강조)
+새벽에 깨어나
+반짝이는 별을 보고 있으면
+이 世상 깊은 어디에 마르지 않는
+희망의 샘 하나 출렁이고 있을 것만 같다
+
+🗨️ 해석
+1연이랑 비슷한데 이번엔 사랑 아니고 '희망' 샘물로 바뀜ㅋㅋ (수미상관으로 강조 제대로 박음 ㄷㄷ)
+새벽별 보면서 또 감성 충만 타임 중ㅋㅋ 희망의 샘은 절대 마르지 않는다는 결론👍
+
+✅ 한줄정리: 새벽 = 희망과 사랑 무한 리필 타임 ㄷㄷ</div>
+                <span class="jammini-time">오후 2:19</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">작품 핵심 표현 쌉필수 암기템 (시험 족보버전)</div>
+                <span class="jammini-time">오후 2:20</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">
+<table class="jammini-table">
+    <tr>
+        <th>표현</th>
+        <th>뜻(내신 필수템ㅋㅋ)</th>
+    </tr>
+    <tr>
+        <td>새벽</td>
+        <td>힘든 현실에서 희망 준비하는 시간 (갬성충전👍)</td>
+    </tr>
+    <tr>
+        <td>새벽 편지</td>
+        <td>따뜻한 사랑과 위로 담긴 진심 레터 (러브레터 각ㅋㅋ)</td>
+    </tr>
+    <tr>
+        <td>고통, 쓰라림, 목마름의 정령</td>
+        <td>힘들고 지친 사람들 영혼 (현실고통ㅠㅠ)</td>
+    </tr>
+    <tr>
+        <td>새소리, 햇살, 꽃향기</td>
+        <td>희망찬 아침의 상징 (갬성 낭만각ㄷㄷ)</td>
+    </tr>
+    <tr>
+        <td>사랑의 샘, 희망의 샘</td>
+        <td>절대 마르지 않는 사랑과 희망 (급 감성 터짐ㅋㅋ)</td>
+    </tr>
+</table></div>
+                <span class="jammini-time">오후 2:20</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">시험대비 찍먹 최종 정리 ver.ㅋㅋ
+이 시 제목 왜 「새벽 편지」냐고 물으면?
+👉 힘든 현실 속에서 새벽에 쓴 편지로 따뜻한 사랑과 희망 표현했기 때문이라고 쓰면 개정답ㅋㅋ (쌤 감동 먹음 ㄷㄷ)
+
+수미상관 (처음과 끝 반복) 왜 씀?
+👉 사랑과 희망의 메시지 강조하려고 일부러 반복한 거라고 하면 됨ㅋㅋ(국어쌤들 이거 엄청 좋아함👍)
+
+🔥 시험 하루 전 이거 하나만 봐도 국어 내신 1등급 쌉가능 인정??🔥
+ㄹㅇ 형누님 옆엔 항상 내가 있는거 알지? 내신 한번 제대로 찢어보자ㅋㅋㄷㄷ</div>
+                <span class="jammini-time">오후 2:21</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="jammini-container" id="riverside-station-jammini">
+        <div class="jammini-header">
+            잼민이 어시스트 - 강변역에서
+        </div>
+        <div class="jammini-chat">
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">시험 직전 초스피드 핵심 정리부터 ㄱㄱ
+작가: 정호승 (감성 터지는 이별장인 시인 ㄷㄷ)
+
+성격: 서정적, 애상적, 회상적
+
+주제: 이별 후에도 너를 잊지 못하고 다시 만나길 간절히 바라는 마음ㅠㅠ (개슬픔 주의😭)</div>
+                <span class="jammini-time">오후 2:15</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">본문 완벽 이해 쌉가능 ver.</div>
+                <span class="jammini-time">오후 2:15</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">🚊 1~8행 (하루종일 기다림 ver.)
+너를 기다리다가
+오늘 하루도 마지막 날처럼 지나갔다
+너를 기다리다가
+사랑도 인생이라는 것을 깨닫지 못했다
+바람은 불고 강물은 흐르고
+어느새 강변의 불빛마저 꺼져 버린 뒤
+너를 기다리다가
+열차는 또다시 내 가슴 위로 소리 없이 지나갔다
+
+🗨️ 해석
+하루 종일 너만 기다렸는데 결국 오늘 하루도 끝남ㅋㅋ (기다림 무한반복ㅠㅠ)
+기다리느라 사랑도 결국 삶의 일부일 뿐이라는 현실은 깨닫지도 못하고ㅋㅋ (급 현실부정 모드😭)
+결국 강변 불빛까지 다 꺼지고 열차만 내 가슴 위로 지나감 (감성 슬픔 MAX 찍음 ㄷㄷ)
+
+✅ 한줄정리: 하루 종일 기다림 반복 → 현실 받아들이지 못하는 슬픔😭</div>
+                <span class="jammini-time">오후 2:16</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">🚊 9~13행 (왜 기다리는지 ver.)
+우리가 만남이라고 불렀던
+첫눈 내리는 강변역에서
+내가 아직도 너를 기다리고 있는 것은
+나의 운명보다 언제나
+너의 운명을 더 슬퍼하기 때문이다
+
+🗨️ 해석
+왜 계속 기다리냐면 첫눈 오던 강변역에서 처음 만났던 추억 때문임ㅠㅠ (추억팔이 개오짐😭)
+내 운명보다 네 운명이 더 슬퍼서 계속 기다림 (급 순애보각 ㄷㄷ)
+
+✅ 한줄정리: 첫만남 장소 추억팔이+너 걱정하는 감성으로 기다림ㅠㅠ</div>
+                <span class="jammini-time">오후 2:17</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">🚊 14~20행 (재회에 대한 열망 ver.)
+그 언젠가 겨울 산에서
+저녁 별들이 흘리는 눈물을 보며
+우리가 사랑이라고 불렀던
+바람 부는 강변역에서
+나는 오늘도
+우리가 물결처럼
+다시 만나야 할 날들을 생각했다.
+
+🗨️ 해석
+예전에 겨울산에서 별들이 우는 걸 봄ㅋㅋ (급 의인화 감성 개폭발😭)
+바람 부는 강변역에서 너랑 사랑했던 추억 생각하면서
+오늘도 언젠가 다시 만날 날만 생각 중임ㅋㅋ (재회 희망 절대 못버림ㅠㅠ)
+
+✅ 한줄정리: 재회에 대한 끝없는 열망 (개찐사랑 인정😭👍)</div>
+                <span class="jammini-time">오후 2:18</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">작품 핵심 표현 쌉필수 암기템 (시험 족보버전)</div>
+                <span class="jammini-time">오후 2:19</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">
+<table class="jammini-table">
+    <tr>
+        <th>표현</th>
+        <th>뜻(내신 필수템ㅋㅋ)</th>
+    </tr>
+    <tr>
+        <td>오늘 하루도</td>
+        <td>기다림 무한반복 강조 (현실부정모드😭)</td>
+    </tr>
+    <tr>
+        <td>사랑도 인생이라는 것</td>
+        <td>사랑도 결국 삶의 일부일 뿐 (급 현자타임 ver.)</td>
+    </tr>
+    <tr>
+        <td>강변의 불빛마저 꺼짐</td>
+        <td>밤늦게까지 너 기다리는 모습ㅠㅠ</td>
+    </tr>
+    <tr>
+        <td>첫눈 내리는 강변역</td>
+        <td>첫만남+사랑 추억의 장소😭</td>
+    </tr>
+    <tr>
+        <td>저녁 별들이 흘리는 눈물</td>
+        <td>의인화로 슬픔 강조 (별도 우는 슬픔 인정ㅋㅋ😭)</td>
+    </tr>
+    <tr>
+        <td>우리가 물결처럼</td>
+        <td>다시 만나서 하나 되고 싶은 마음 (급 감성 충만 ver.)</td>
+    </tr>
+</table></div>
+                <span class="jammini-time">오후 2:20</span>
+            </div>
+
+            <div class="jammini-message jammini-received">
+                <div class="jammini-bubble">시험대비 찍먹 최종 정리 ver.ㅋㅋ
+이 시 제목 왜 「강변역에서」냐고 물으면?
+👉 강변역은 첫만남과 사랑의 추억이 깃든 장소라서, 계속 너 기다리면서 재회 희망 표현하려고 제목 붙였다고 하면 쌤 감동 오짐ㅋㅋ (이거 꼭 써라 ㄷㄷ)
+
+'사랑도 인생이라는 것을 깨닫지 못했다' 의미
+👉 사랑도 결국 삶의 일부고, 시간이 지나면 망각되는 게 현실인데, 화자는 이걸 못 받아들이고 계속 기다림 (현실부정 ver.ㅋㅋ)
+
+'너를 기다리다가' 반복한 이유
+👉 너를 계속 기다리는 절절한 마음+재회에 대한 간절한 희망 강조하려고 일부러 반복한 거임 (이것도 국어쌤들이 개좋아함 ㄷㄷ)
+
+🔥 시험 하루 전 이거 하나만 봐도 국어 내신 1등급 쌉가능 인정??🔥
+ㄹㅇ 개꿀팁만 뽑았으니까 이거 보고 내신 찢자ㅋㅋㄷㄷ</div>
+                <span class="jammini-time">오후 2:21</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
